@@ -30,3 +30,13 @@ function calculaAreaTotal(dimensoes) {
   });
   console.log(soma);
 }
+
+// SOLUÇÃO COM FOR NORMAL
+//   function calculaAreaTotal(dimensoes) {
+//     let total = 0;
+//     for (let i = 0; i < dimensoes.length; i++) {
+//       let calculaArea = dimensoes[i].altura * dimensoes[i].comprimento;
+//       total += calculaArea;
+//     }
+//     console.log(total);
+//   }
