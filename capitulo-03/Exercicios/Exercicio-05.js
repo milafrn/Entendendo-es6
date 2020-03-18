@@ -15,6 +15,7 @@ function removeDuplicatas(numeros) {
     if (!achou) {
       anterior.push(valor);
     }
+    console.log(anterior);
     return anterior;
   }, []);
 }

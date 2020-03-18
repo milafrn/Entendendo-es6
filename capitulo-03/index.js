@@ -23,13 +23,11 @@ var lista = [
 ];
 
 buscar("nome", "Tânia", lista);
+buscar("sobrenome", "Costa", lista);
 
 function buscar(propriedade, valor, lista) {
-  for (let i = 0; i < lista.length; i++) {
-    if (lista[i][propriedade] === valor) {
-      return console.log(lista[i]);
-    } else {
-      return console.error("não existe este nome na lista");
-    }
-  }
+  const buscando = lista.find(
+    objetoDavez => objetoDavez[propriedade] === valor
+  );
+  console.log(buscando);
 }
