@@ -27,7 +27,7 @@ function calculaAreaTotal(dimensoes) {
 
   let soma = dimensao.reduce(function(a, b) {
     return a + b;
-  });
+  }, 0);
   console.log(soma);
 }
 
